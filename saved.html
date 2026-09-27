@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Saved Properties — RENTBD</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="catalog.css">
+</head>
+<body>
+
+  <header class="navbar-container">
+    <nav class="navbar">
+      <a href="index.html" class="brand-logo">RENTBD</a>
+      <ul class="nav-menu">
+        <li><a href="index.html" class="nav-item">Home</a></li>
+        <li><a href="catalog.html" class="nav-item">Find Homes</a></li>
+        <li><a href="saved.html" class="nav-item active">Saved</a></li>
+      </ul>
+      <a href="post-ad.html" class="pill-btn btn-owner">POST TO-LET</a>
+    </nav>
+  </header>
+
+  <main class="catalog-page">
+    <div class="filter-box" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;">
+      <div>
+        <h2>❤️ আপনার পছন্দের বাসাগুলোর তালিকা</h2>
+        <p style="color: #64748b; font-size: 14px; margin-top: 4px;">পরবর্তীতে সহজে যোগাযোগ করার জন্য সেভ করে রাখা প্রোপার্টিসমূহ</p>
+      </div>
+      <button id="clearAllBtn" onclick="clearAllSaved()" style="background: #fee2e2; color: #b91c1c; border: 1px solid #f87171; padding: 8px 14px; border-radius: 6px; font-weight: 600; cursor: pointer; font-size: 13px;">সব মুছে ফেলুন</button>
+    </div>
+
+    <div id="savedContainer" class="cards-grid">
+    </div>
+
+    <div id="emptySavedMsg" style="display: none; text-align: center; padding: 50px 0;">
+      <h3 style="color: #334155; font-size: 18px;">আপনার পছন্দের তালিকায় কোনো বাসা নেই!</h3>
+      <p style="color: #64748b; margin-top: 8px; font-size: 14px;">বাসার বিজ্ঞাপনগুলো দেখে আপনার পছন্দের বাসা সেভ করে রাখুন।</p>
+      <a href="catalog.html" class="pill-btn" style="display: inline-block; margin-top: 16px; background: #0f172a; color: white;">বাসা খুঁজুন &rarr;</a>
+    </div>
+  </main>
+
+  <footer class="app-footer">
+  <div class="footer-inner">
+    
+    <div class="footer-brand">
+      <a href="index.html" class="footer-logo">RENT<span>BD</span></a>
+      <p class="footer-tagline">স্মার্ট উপায়ে বাসা খোঁজা ও ভাড়ার সহজ সমাধান</p>
+    </div>
+
+    <div class="footer-nav">
+      <div class="nav-group">
+        <span class="nav-title">খুঁজুন</span>
+        <a href="catalog.html?type=bachelor">ব্যাচেলর</a>
+        <a href="catalog.html?type=family">ফ্যামিলি</a>
+        <a href="catalog.html?type=student">সাবলেট/সিট</a>
+      </div>
+
+      <div class="nav-group">
+        <span class="nav-title">প্ল্যাটফর্ম</span>
+        <a href="post-ad.html">বিজ্ঞাপন দিন</a>
+        <a href="saved.html">পছন্দের তালিকা</a>
+        <a href="about.html">আমাদের সম্পর্কে</a>
+      </div>
+
+      <div class="nav-group">
+  <span class="nav-title">সহায়তা</span>
+  <a href="about.html#faq">সাধারণ জিজ্ঞাসা</a>
+  <a href="about.html#contact">যোগাযোগ</a>
+  <a href="about.html#complaint">অভিযোগ কেন্দ্র</a>
+  <a href="about.html#terms">শর্তাবলী</a>
+</div>
+
+    <div class="footer-meta">
+      <span class="location-dot">● চট্টগ্রাম ও ঢাকা, বাংলাদেশ</span>
+      <p class="copy-text">&copy; 2026 RENTBD. All Rights Reserved.
+        Developed by Maruful's Team
+      </p>
+    </div>
+
+  </div>
+</footer>
+
+  <script src="data.js"></script>
+  <script src="saved.js"></script>
+</body>
+</html>

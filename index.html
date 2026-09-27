@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RENTBD — We Help You Find & Rent Your House</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="hero-wrapper">
+    <header class="navbar-container">
+      <nav class="navbar">
+        <a href="index.html" class="brand-logo">RENTBD</a>
+        
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-item active">Home</a></li>
+          <li><a href="catalog.html?type=bachelor" class="nav-item">Bachelor</a></li>
+          <li><a href="catalog.html?type=family" class="nav-item">Family</a></li>
+          <li><a href="catalog.html?type=student" class="nav-item">Student</a></li>
+        </ul>
+
+        <a href="post-ad.html" class="pill-btn btn-owner">BECOME AN OWNER</a>
+      </nav>
+    </header>
+
+    <main class="hero-section">
+      <h1 class="hero-title">We Help You Find &amp;<br>Rent Your House</h1>
+
+      <div class="toggle-group">
+  <a href="catalog.html" class="pill-btn btn-toggle active">FIND</a>
+  <a href="post-ad.html" class="pill-btn btn-toggle">RENT</a>
+</div>
+
+      <form class="search-bar" action="catalog.html" method="GET">
+        <input 
+          type="text" 
+          name="query" 
+          class="search-input" 
+          placeholder="Search by Address, City, Street, ZIP" 
+          required
+        >
+        <button type="submit" class="pill-btn btn-search">SEARCH</button>
+      </form>
+    </main>
+  </div>
+  
+<footer class="app-footer">
+  <div class="footer-inner">
+    
+    <div class="footer-brand">
+      <a href="index.html" class="footer-logo">RENT<span>BD</span></a>
+      <p class="footer-tagline">স্মার্ট উপায়ে বাসা খোঁজা ও ভাড়ার সহজ সমাধান</p>
+    </div>
+
+    <div class="footer-nav">
+      <div class="nav-group">
+        <span class="nav-title">খুঁজুন</span>
+        <a href="catalog.html?type=bachelor">ব্যাচেলর</a>
+        <a href="catalog.html?type=family">ফ্যামিলি</a>
+        <a href="catalog.html?type=student">সাবলেট/সিট</a>
+      </div>
+
+      <div class="nav-group">
+        <span class="nav-title">প্ল্যাটফর্ম</span>
+        <a href="post-ad.html">বিজ্ঞাপন দিন</a>
+        <a href="saved.html">পছন্দের তালিকা</a>
+        <a href="about.html">আমাদের সম্পর্কে</a>
+      </div>
+
+      <div class="nav-group">
+  <span class="nav-title">সহায়তা</span>
+  <a href="about.html#faq">সাধারণ জিজ্ঞাসা</a>
+  <a href="about.html#contact">যোগাযোগ</a>
+  <a href="about.html#complaint">অভিযোগ কেন্দ্র</a>
+  <a href="about.html#terms">শর্তাবলী</a>
+</div>
+
+    <div class="footer-meta">
+      <span class="location-dot">● চট্টগ্রাম ও ঢাকা, বাংলাদেশ</span>
+      <p class="copy-text">&copy; 2026 RENTBD. All Rights Reserved.
+        Developed by Maruful's Team
+      </p>
+    </div>
+
+  </div>
+</footer>
+
+</body>
+</html>

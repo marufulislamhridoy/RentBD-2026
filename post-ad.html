@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Post To-Let — RENTBD</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="post-ad.css">
+</head>
+<body>
+
+  <header class="navbar-container">
+    <nav class="navbar">
+      <a href="index.html" class="brand-logo">RENTBD</a>
+      <ul class="nav-menu">
+        <li><a href="index.html" class="nav-item">Home</a></li>
+        <li><a href="catalog.html" class="nav-item">Find Homes</a></li>
+        <li><a href="saved.html" class="nav-item">Saved</a></li>
+      </ul>
+      <a href="post-ad.html" class="pill-btn btn-owner active-nav">POST TO-LET</a>
+    </nav>
+  </header>
+
+  <main class="form-wrapper">
+    <div class="form-card">
+      <h2>বাসা ভাড়ার নতুন বিজ্ঞাপন দিন</h2>
+      <p class="subtitle">দালাল ছাড়া সরাসরি সঠিক ভাড়াটিয়া পেতে আপনার বাসার তথ্য ও ছবি দিন</p>
+
+      <form id="toLetForm">
+        <div class="form-group">
+          <label for="adTitle">বিজ্ঞাপনের শিরোনাম *</label>
+          <input type="text" id="adTitle" placeholder="যেমন: ৩ বেডের আলো-বাতাসপূর্ণ ফ্যামিলি ফ্ল্যাট" required>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="adCategory">ক্যাটাগরি *</label>
+            <select id="adCategory" required>
+              <option value="family">Family (ফ্যামিলি)</option>
+              <option value="bachelor">Bachelor (ব্যাচেলর)</option>
+              <option value="duplex">Student (শিক্ষার্থী)</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="adRent">মাসিক ভাড়া (টাকা) *</label>
+            <input type="number" id="adRent" placeholder="যেমন: 18000" min="1000" required>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="citySelect">শহর / বিভাগ *</label>
+            <select id="citySelect" required>
+              <option value="">শহর নির্বাচন করুন</option>
+              <option value="chattogram">চট্টগ্রাম</option>
+              <option value="dhaka">ঢাকা</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="thanaSelect">থানা / এলাকা *</label>
+            <select id="thanaSelect" required disabled>
+              <option value="">প্রথমে শহর নির্বাচন করুন</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="adAddress">পূর্ণাঙ্গ ঠিকানা *</label>
+          <input type="text" id="adAddress" placeholder="যেমন: রোড নং ২, বাড়ি নং ৪৫, ফ্ল্যাট ৪বি" required>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="adBeds">বেডরুম সংখ্যা</label>
+            <input type="number" id="adBeds" value="2" min="1" required>
+          </div>
+          <div class="form-group">
+            <label for="adBaths">বাথরুম সংখ্যা</label>
+            <input type="number" id="adBaths" value="2" min="1" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="adPhone">বাড়িওয়ালার মোবাইল নম্বর *</label>
+          <input type="tel" id="adPhone" maxlength="11" placeholder="01XXXXXXXXX" required>
+        </div>
+
+<div class="form-group">
+  <label>বাসার ছবি আপলোড করুন (সর্বোচ্চ ৮টি ছবি) *</label>
+  <div class="file-dropzone">
+    <input type="file" id="adImage" accept="image/*" multiple required>
+    <p>📁 ক্লিক করে কম্পিউটার বা মোবাইল থেকে সর্বোচ্চ ৮টি ছবি সিলেক্ট করুন</p>
+  </div>
+  
+  <div id="imagePreviewContainer" class="preview-box" style="display: none;">
+    <p class="preview-title" id="previewCountText">ছবি প্রিভিউ (০/৮):</p>
+    <div id="previewGrid" class="preview-grid"></div>
+  </div>
+</div>
+
+        <button type="submit" class="pill-btn btn-submit">বিজ্ঞাপন প্রকাশ করুন</button>
+      </form>
+    </div>
+  </main>
+
+  <footer class="app-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a href="index.html" class="footer-logo">RENT<span>BD</span></a>
+        <p class="footer-tagline">স্মার্ট উপায়ে বাসা খোঁজা ও ভাড়ার সহজ সমাধান</p>
+      </div>
+
+      <div class="footer-nav">
+        <div class="nav-group">
+          <span class="nav-title">খুঁজুন</span>
+          <a href="catalog.html?type=bachelor">ব্যাচেলর</a>
+          <a href="catalog.html?type=family">ফ্যামিলি</a>
+          <a href="catalog.html?type=student">সাবলেট/সিট</a>
+        </div>
+
+        <div class="nav-group">
+          <span class="nav-title">প্ল্যাটফর্ম</span>
+          <a href="post-ad.html">বিজ্ঞাপন দিন</a>
+          <a href="saved.html">পছন্দের তালিকা</a>
+          <a href="about.html">আমাদের সম্পর্কে</a>
+        </div>
+
+        <div class="nav-group">
+          <span class="nav-title">সহায়তা</span>
+          <a href="about.html#faq">সাধারণ জিজ্ঞাসা</a>
+          <a href="about.html#contact">যোগাযোগ</a>
+          <a href="about.html#complaint">অভিযোগ কেন্দ্র</a>
+          <a href="about.html#terms">শর্তাবলী</a>
+        </div>
+      </div>
+
+      <div class="footer-meta">
+        <span class="location-dot">● চট্টগ্রাম ও ঢাকা, বাংলাদেশ</span>
+        <p class="copy-text">&copy; 2026 RENTBD. All Rights Reserved. Developed by Maruful's Team</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="post-ad.js"></script>
+</body>
+</html>
